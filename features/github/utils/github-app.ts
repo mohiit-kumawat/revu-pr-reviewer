@@ -7,9 +7,9 @@ export function getGithubApp(): App {
     githubApp = new App({
       appId: process.env.GITHUB_APP_ID!,
       privateKey: process.env.GITHUB_APP_PRIVATE_KEY!.replace(/\\n/g, '\n'),
-      webhhooks:{
-        secret:process.env.GITHUB_APP_WEBHOOK_SECRET!,
-      }
+      webhooks: {
+        secret: (process.env.GITHUB_WEBHOOK_SECRET || process.env.GITHUB_APP_WEBHOOK_SECRET)!,
+      },
     });
   }
   return githubApp;
