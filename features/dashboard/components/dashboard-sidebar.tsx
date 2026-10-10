@@ -1,10 +1,10 @@
-import Image from "next/image";
+"use client";
+
 import Link from "next/link";
-
-
 import { DASHBOARD_ROUTES } from "@/features/dashboard/lib/routes";
 import { DashboardNav } from "@/features/dashboard/components/dashboard-nav";
 import { SidebarUserButton } from "@/features/dashboard/components/sidebar-user-button";
+import { RevuIcon } from "@/components/ui/brand-logo";
 import {
   Sidebar,
   SidebarContent,
@@ -23,40 +23,50 @@ type DashboardSidebarProps = {
   plan?: string;
 };
 
-export function DashboardSidebar({ user, plan = "Pro" }: DashboardSidebarProps) {
+export function DashboardSidebar({
+  user,
+  plan = "Pro",
+}: DashboardSidebarProps) {
   return (
-    <Sidebar collapsible="icon">
-      <SidebarHeader>
+    <Sidebar collapsible="icon" className="border-r border-border/80 bg-sidebar">
+      <SidebarHeader className="py-3 px-3">
         <SidebarMenu>
           <SidebarMenuItem>
             <SidebarMenuButton
               asChild
               size="lg"
-              tooltip="ChaiCodeAIReview"
+              tooltip="revu"
+              className="h-11 rounded-xl px-2 hover:bg-secondary/60 transition-colors"
             >
-              <Link href={DASHBOARD_ROUTES.overview}>
-                <span className="flex size-8 shrink-0 items-center justify-center overflow-hidden rounded-none bg-sidebar">
-                  <Image
-                    src="/logo2.svg"
-                    alt=""
-                    width={62}
-                    height={62}
-                    className="object-contain"
-                  />
-                </span>
-                <span className="grid flex-1 text-left leading-tight group-data-[collapsible=icon]:hidden">
-                  <span className="truncate font-medium">ChaiCodeAIReview</span>
-                </span>
+              <Link
+                href={DASHBOARD_ROUTES.overview}
+                className="flex items-center gap-2.5"
+              >
+                {/* Bespoke Revu Squircle Badge */}
+                <div className="flex size-8 shrink-0 items-center justify-center rounded-lg bg-card border border-[#D99A64]/40 text-[#D99A64] shadow-[0_0_12px_-2px_rgba(217,154,100,0.35)]">
+                  <RevuIcon className="size-4.5" />
+                </div>
+                {/* Brand Text */}
+                <div className="flex flex-col text-left leading-tight group-data-[collapsible=icon]:hidden">
+                  <span className="truncate font-bold tracking-tight text-foreground text-base">
+                    revu
+                  </span>
+                  <span className="truncate text-[10px] text-muted-foreground font-medium uppercase tracking-wider">
+                    AI PR Reviewer
+                  </span>
+                </div>
               </Link>
             </SidebarMenuButton>
           </SidebarMenuItem>
         </SidebarMenu>
       </SidebarHeader>
+
       <SidebarContent>
         <DashboardNav />
       </SidebarContent>
-      <SidebarFooter>
-        <SidebarSeparator />
+
+      <SidebarFooter className="p-2">
+        <SidebarSeparator className="my-1" />
         <SidebarUserButton user={user} plan={plan} />
       </SidebarFooter>
       <SidebarRail />

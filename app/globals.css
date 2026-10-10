@@ -49,73 +49,74 @@
 }
 
 :root {
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.145 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
-  --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
-  --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
+  --background: #F5F0E8;
+  --foreground: #242321;
+  --card: #FFFCF7;
+  --card-foreground: #242321;
+  --popover: #FFFCF7;
+  --popover-foreground: #242321;
+  --primary: #B86E43;
+  --primary-foreground: #FFFFFF;
+  --secondary: #EAE2D6;
+  --secondary-foreground: #242321;
+  --muted: #EAE2D6;
+  --muted-foreground: #6B635B;
+  --accent: #EAE2D6;
+  --accent-foreground: #242321;
   --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.922 0 0);
-  --input: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
-  --chart-1: oklch(0.87 0 0);
-  --chart-2: oklch(0.556 0 0);
-  --chart-3: oklch(0.439 0 0);
-  --chart-4: oklch(0.371 0 0);
-  --chart-5: oklch(0.269 0 0);
+  --border: #E5DDD1;
+  --input: #E5DDD1;
+  --ring: #B86E43;
+  --chart-1: #B86E43;
+  --chart-2: #8C5332;
+  --chart-3: #4A3E38;
+  --chart-4: #D99A64;
+  --chart-5: #EAE2D6;
   --radius: 0.625rem;
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.205 0 0);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: oklch(0.205 0 0);
-  --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
+  --sidebar: #EAE2D6;
+  --sidebar-foreground: #242321;
+  --sidebar-primary: #B86E43;
+  --sidebar-primary-foreground: #FFFFFF;
+  --sidebar-accent: #DDD3C4;
+  --sidebar-accent-foreground: #242321;
+  --sidebar-border: #E5DDD1;
+  --sidebar-ring: #B86E43;
 }
 
 .dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.205 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.205 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.922 0 0);
-  --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.269 0 0);
-  --accent-foreground: oklch(0.985 0 0);
+  --background: #191A19;
+  --foreground: #F1EEE7;
+  --card: #222321;
+  --card-foreground: #F1EEE7;
+  --popover: #222321;
+  --popover-foreground: #F1EEE7;
+  --primary: #D99A64;
+  --primary-foreground: #191A19;
+  --secondary: #2B2C28;
+  --secondary-foreground: #F1EEE7;
+  --muted: #2B2C28;
+  --muted-foreground: #9C988F;
+  --accent: #2B2C28;
+  --accent-foreground: #F1EEE7;
   --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.556 0 0);
-  --chart-1: oklch(0.87 0 0);
-  --chart-2: oklch(0.556 0 0);
-  --chart-3: oklch(0.439 0 0);
-  --chart-4: oklch(0.371 0 0);
-  --chart-5: oklch(0.269 0 0);
-  --sidebar: oklch(0.205 0 0);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.269 0 0);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.556 0 0);
+  --border: #383832;
+  --input: #383832;
+  --ring: #D99A64;
+  --chart-1: #D99A64;
+  --chart-2: #B86E43;
+  --chart-3: #9C988F;
+  --chart-4: #2B2C28;
+  --chart-5: #383832;
+  --sidebar: #2B2C28;
+  --sidebar-foreground: #F1EEE7;
+  --sidebar-primary: #D99A64;
+  --sidebar-primary-foreground: #191A19;
+  --sidebar-accent: #383832;
+  --sidebar-accent-foreground: #F1EEE7;
+  --sidebar-border: #383832;
+  --sidebar-ring: #D99A64;
 }
+
 
 @layer base {
   * {
@@ -130,4 +131,44 @@
   html {
     @apply font-sans;
   }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.55s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.45s ease-out both;
+}
+
+.animation-delay-100 {
+  animation-delay: 100ms;
+}
+
+.animation-delay-200 {
+  animation-delay: 200ms;
+}
+
+.animation-delay-300 {
+  animation-delay: 300ms;
 }

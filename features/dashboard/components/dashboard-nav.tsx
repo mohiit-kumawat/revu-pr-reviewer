@@ -3,8 +3,9 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import {
-  LayoutIcon ,
+  SquaresFour,
   GitBranch,
+  GitPullRequest,
   GithubLogo,
   Gear,
 } from "@phosphor-icons/react";
@@ -23,8 +24,9 @@ import {
 } from "@/components/ui/sidebar";
 
 const NAV_ICONS = {
-  "layout-dashboard": LayoutIcon ,
-  "folder-git-2": GitBranch,
+  overview: SquaresFour,
+  repos: GitBranch,
+  "pull-requests": GitPullRequest,
   github: GithubLogo,
   settings: Gear,
 } as const;
@@ -41,9 +43,11 @@ export function DashboardNav() {
 
   return (
     <SidebarGroup>
-      <SidebarGroupLabel>Workspace</SidebarGroupLabel>
+      <SidebarGroupLabel className="text-[11px] font-semibold uppercase tracking-wider text-muted-foreground/70 px-3">
+        Workspace
+      </SidebarGroupLabel>
       <SidebarGroupContent>
-        <SidebarMenu>
+        <SidebarMenu className="gap-1 px-1">
           {DASHBOARD_NAV_ITEMS.map((item) => {
             const Icon = NAV_ICONS[item.icon];
             const active = isNavActive(pathname, item.href);
@@ -54,9 +58,19 @@ export function DashboardNav() {
                   asChild
                   isActive={active}
                   tooltip={item.title}
+                  className={`h-9 rounded-lg px-2.5 transition-all text-xs font-medium ${
+                    active
+                      ? "bg-secondary text-foreground font-semibold shadow-xs border-l-2 border-[#D99A64]"
+                      : "text-muted-foreground hover:text-foreground hover:bg-secondary/50"
+                  }`}
                 >
-                  <Link href={item.href}>
-                    <Icon />
+                  <Link href={item.href} className="flex items-center gap-2.5">
+                    <Icon
+                      className={`size-4 ${
+                        active ? "text-[#D99A64]" : "text-muted-foreground"
+                      }`}
+                      weight={active ? "bold" : "regular"}
+                    />
                     <span>{item.title}</span>
                   </Link>
                 </SidebarMenuButton>
