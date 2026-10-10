@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <rect width="32" height="32" rx="7" fill="#191A19"/>
+  <rect width="30" height="30" x="1" y="1" rx="6" fill="none" stroke="#D99A64" stroke-opacity="0.35" stroke-width="1"/>
+  <!-- Repo Folder -->
+  <path d="M7 10a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2z" fill="#D99A64" fill-opacity="0.25" stroke="#D99A64" stroke-width="1.8"/>
+  <!-- Branch fork inside folder -->
+  <line x1="12" y1="14" x2="12" y2="21" stroke="#F4B37D" stroke-width="1.8" stroke-linecap="round"/>
+  <circle cx="12" cy="14" r="1.5" fill="#F4B37D"/>
+  <circle cx="12" cy="21" r="1.5" fill="#F4B37D"/>
+  <circle cx="19.5" cy="15.5" r="1.5" fill="#D99A64"/>
+  <path d="M12 18.5c0-1.8 7.5-1.2 7.5-3" fill="none" stroke="#F4B37D" stroke-width="1.8" stroke-linecap="round"/>
+</svg>
+

@@ -7,8 +7,12 @@ import React from 'react'
 
 
 export const metadata: Metadata = {
-    title: "GitHub App · Dashboard",
-  };
+  title: "GitHub App · Dashboard",
+  icons: {
+    icon: "/favicon.svg",
+    shortcut: "/favicon.svg",
+  },
+};
   
 
 const DashboardGithubPage = async() => {

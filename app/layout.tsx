@@ -19,6 +19,11 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "revu — AI PR Reviewer with Full Codebase Context",
   description: "Automated, context-aware AI code reviews for GitHub pull requests.",
+  icons: {
+    icon: "/favicon.svg",
+    shortcut: "/favicon.svg",
+    apple: "/favicon.svg",
+  },
 };
 
 export default function RootLayout({

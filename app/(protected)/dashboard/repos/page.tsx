@@ -14,6 +14,10 @@ import { RepoList } from "@/features/dashboard/components/repo-list";
 
 export const metadata: Metadata = {
   title: "Repositories · Dashboard",
+  icons: {
+    icon: "/icons/repo.svg",
+    shortcut: "/icons/repo.svg",
+  },
 };
 
 

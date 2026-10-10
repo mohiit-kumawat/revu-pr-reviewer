@@ -13,6 +13,10 @@ import { QuickStartGuide } from "@/features/dashboard/components/overview/quick-
 export const metadata: Metadata = {
   title: "Dashboard Overview · revu",
   description: "Monitor AI pull request reviews, repositories, and codebase vector context.",
+  icons: {
+    icon: "/icons/dashboard.svg",
+    shortcut: "/icons/dashboard.svg",
+  },
 };
 
 export default async function DashboardPage() {

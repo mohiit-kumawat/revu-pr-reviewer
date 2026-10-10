@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <rect width="32" height="32" rx="7" fill="#191A19"/>
+  <rect width="30" height="30" x="1" y="1" rx="6" fill="none" stroke="#D99A64" stroke-opacity="0.35" stroke-width="1"/>
+  <!-- Amber Padlock / Secure Auth -->
+  <rect x="9" y="13.5" width="14" height="11" rx="3" fill="#D99A64"/>
+  <path d="M12 13.5v-3.5a4 4 0 0 1 8 0v3.5" fill="none" stroke="#F4B37D" stroke-width="2.2" stroke-linecap="round"/>
+  <circle cx="16" cy="18" r="1.5" fill="#191A19"/>
+  <path d="M16 19.5v2" stroke="#191A19" stroke-width="1.5" stroke-linecap="round"/>
+</svg>
+

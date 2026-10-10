@@ -9,6 +9,10 @@ import { getInstallationStatus } from "@/features/github/server/installation";
 export const metadata: Metadata = {
   title: "Pull Requests · revu Dashboard",
   description: "View and manage AI code reviews across your pull requests.",
+  icons: {
+    icon: "/icons/pull-request.svg",
+    shortcut: "/icons/pull-request.svg",
+  },
 };
 
 export default async function DashboardPullRequestsPage() {

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <rect width="32" height="32" rx="7" fill="#191A19"/>
+  <rect width="30" height="30" x="1" y="1" rx="6" fill="none" stroke="#D99A64" stroke-opacity="0.35" stroke-width="1"/>
+  <!-- Pull Request Glyph -->
+  <circle cx="10" cy="10.5" r="2.5" fill="#191A19" stroke="#D99A64" stroke-width="2"/>
+  <circle cx="10" cy="21.5" r="2.5" fill="#191A19" stroke="#D99A64" stroke-width="2"/>
+  <line x1="10" y1="13" x2="10" y2="19" stroke="#D99A64" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="22" cy="21.5" r="2.5" fill="#D99A64"/>
+  <path d="M22 19v-4.5a3.5 3.5 0 0 0-3.5-3.5h-6" fill="none" stroke="#F4B37D" stroke-width="2" stroke-linecap="round"/>
+</svg>
+

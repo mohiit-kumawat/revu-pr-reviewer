@@ -6,6 +6,10 @@ export const metadata: Metadata = {
   title: "Sign in — revu",
   description:
     "Sign in to revu with your GitHub account to enable automated, context-aware pull request reviews.",
+  icons: {
+    icon: "/icons/sign-in.svg",
+    shortcut: "/icons/sign-in.svg",
+  },
 };
 
 type SignInPageProps = {
