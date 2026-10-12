@@ -26,10 +26,14 @@
 
 # guides, templates & local preview files (keep local, do not deploy)
 *.pdf
+!revu_fullstack_interview_bible.pdf
 *_template.html
 dashboard_preview.*
 tree_preview.*
 tree_full_preview.*
+bible_modules/
+compile_bible.js
+generate_*.js
 
 # debug
 npm-debug.log*
@@ -39,6 +43,7 @@ yarn-error.log*
 
 # env files (can opt-in for committing if needed)
 .env*
+!.env.example
 
 # vercel
 .vercel
